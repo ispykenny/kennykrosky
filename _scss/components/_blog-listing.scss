@@ -1,0 +1,50 @@
+.articles-list {
+  padding: 2em 0em;
+
+  &__item {
+    margin-bottom: 4em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #eee;
+
+    &:last-of-type {
+      margin-bottom: 0em;
+      border-bottom: 0px;
+    }
+  }
+
+  &__thumbnail {
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  &__item-inner {
+    padding: 1em 2em 2em 2em;
+
+    p, a {
+      font-size: 1em;
+    }
+  }
+
+  &__title {
+    font-size: 1.6em;
+    margin: 0;
+  }
+
+  &__pub-date {
+    padding-top: 0.8em;
+    font-size: 0.8em;
+    color: #aaa;
+  }
+
+  &__category {
+    padding-bottom: 0.5em;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__link {
+    padding-top: 0.5em;
+  }
+}

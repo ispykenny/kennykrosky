@@ -1,0 +1,56 @@
+.social-connect {
+  padding: 0.5em 0em 1em 0em;
+
+  ul {
+    display: flex;
+    margin: 0; padding: 0;
+    list-style-type: none;
+
+    li {
+      margin-right: 2em; 
+      
+      &:last-of-type {
+        margin-right: 0em;
+      }
+    }
+  }
+}
+
+.form {
+  .input-el {
+    width: 100%;
+    margin-bottom: 1em;
+
+    input {
+      width: calc(100% - 0.5em);
+      height: 40px;
+      font-size: 0.8em;
+      padding-left: 0.5em;
+      outline-color: $blue;
+    }
+  }
+
+  textarea {
+    font-size: 0.8em;
+    width: calc(100% - 0.5em);
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+  }
+
+  .submit-btn {
+    padding: 1em 0em 4em 0em;
+  }
+
+  input[type="submit"] {
+    outline: none;
+    -webkit-appearance: none;
+    box-shadow: none;
+    border-radius: 0px;
+    border: none;
+    padding: 0.8em 2.6em;
+    @extend .cta;
+    font-size: 1em;
+  }
+
+
+}

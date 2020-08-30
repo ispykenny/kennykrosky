@@ -1,0 +1,22 @@
+.cta {
+  background: $blue;
+  color: white;
+  display: inline-block;
+  padding: 0.6em 2.2em;
+  border-radius: 5px;
+  text-decoration: none;
+
+  &.on-dark {
+    background: white;
+    color: $blue;
+    
+    &:hover {
+      background: #eee;
+      transition: background 500ms ease;
+    }
+  }
+}
+
+.cta-parent {
+  padding-top: 1em;
+}

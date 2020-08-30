@@ -1,0 +1,23 @@
+.content-area {
+  padding: 2em 0em;
+  transform: translateY(20px);
+  opacity: 0;
+
+  ul li  {
+    margin-bottom: 1em;
+  }
+
+  a {
+    color: $blue;
+    font-weight: 800;
+  }
+}
+
+
+.show-content {
+  .content-area {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 600ms, transform 600ms ease;
+  }
+}

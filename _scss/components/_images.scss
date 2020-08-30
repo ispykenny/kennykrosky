@@ -1,0 +1,8 @@
+img {
+  opacity: 0;
+  transition: opacity 600ms ease;
+
+  &.loaded {
+    opacity: 1;
+  }
+}

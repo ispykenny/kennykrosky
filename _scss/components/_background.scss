@@ -1,0 +1,18 @@
+.section-bg {
+  @include fill-parent();
+
+  &__el {
+    @include fill-parent();
+    background-size: cover;
+    background-position: center;
+  }
+
+  &.has-overlay {
+
+    &:after {
+      content: '';
+      @include fill-parent();
+      background: rgba($blue, 0.9);
+    }
+  }
+}

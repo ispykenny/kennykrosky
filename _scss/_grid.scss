@@ -1,0 +1,9 @@
+.inner {
+  max-width: 1440px;
+  width: 90%;
+  margin: auto;
+
+  &-narrow {
+    max-width: 1000px;
+  }
+}

@@ -1,0 +1,35 @@
+.work-history {
+
+  &__item-inner {
+    padding: 2em;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h3, p {
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 1.7em;
+  }
+
+  &__job {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    color: $blue;
+  }
+
+  &__item {
+    border-radius: 8px;
+  }
+
+
+  &__item:nth-child(even) {
+    background: #EDEDED;
+  }
+}
+

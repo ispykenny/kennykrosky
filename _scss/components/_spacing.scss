@@ -1,0 +1,22 @@
+.default {
+  padding: 4em 0em 2em 0em;
+  opacity: 0;
+  transition: opacity 1400ms ease;
+}
+
+
+.set {
+  .default {
+    opacity: 1;
+  }
+}
+
+main {
+  padding-top: 10em;
+}
+
+.page-template-home {
+  main {
+    padding-top: 0em;
+  }
+}

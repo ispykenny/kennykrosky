@@ -1,0 +1,141 @@
+.me-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 8em;
+
+  &__item {
+    // width: 45%;
+    width: 100%;
+    position: relative;
+
+    h1 {
+      color: $blue;
+    }
+    
+    p {
+      font-size: 1em;
+      width: 100%;
+      display: inline-block;
+    }
+
+    &:last-of-type {
+      background: white;
+      margin-top: -8em;
+      width: 90%;
+      // width: 55%;
+      z-index: 4;
+      // margin-left: -3em;
+    }
+  }
+}
+
+.circle {
+  position: absolute;
+  top: -25px; right: -25px;
+  width: 50px;
+  height: 50px;
+  border: 6px solid $blue;
+  border-radius: 100%;
+}
+
+.me-section__item-inner p, .me-section__item-inner h1 {
+  line-height: 1.5;
+  opacity: 0;
+  .sleeve-text {
+    display: inline-block;
+
+    &__item {
+      display: inline-block;
+      overflow: hidden;
+      span {
+        display: inline-block;
+        transform: translateY(100%);
+      }
+    }
+  }
+}
+
+.me-section__item-inner {
+  padding: 2em;
+}
+
+.me-section__img {
+  overflow: hidden;
+  position: relative;
+  background: #eee;
+    width: 100%;
+
+  img {
+    opacity: 0;
+
+    &.loaded {
+      opacity: 1;
+    }
+  }
+
+}
+
+
+.init-about {
+  .me-section__item p, .me-section__item h1 {
+    opacity: 1;
+    .sleeve-text {
+
+      &__item {
+        span {
+          transition: transform 600ms ease;
+          transform: translateY(0%);
+        }
+      }
+    }
+  }
+  
+}
+
+
+@media(min-width: $bp-sm) {
+  .me-section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 4em;
+  
+    &__item {
+      width: 45%;
+      position: relative;
+  
+      h1 {
+        color: $blue;
+      }
+      
+      p {
+        font-size: 1em;
+        width: 100%;
+        display: inline-block;
+      }
+  
+      &:last-of-type {
+        background: white;
+        margin-top: -0em;
+        width: 55%;
+        z-index: 4;
+        margin-left: -3em;
+      }
+    }
+    .me-section__item {
+      background: none;
+
+      &-inner {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.added-content {
+  padding-bottom: 4em;
+  .wp-block-image {
+    padding-bottom: 1em;
+  }
+}
