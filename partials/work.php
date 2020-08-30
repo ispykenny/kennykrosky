@@ -1,9 +1,9 @@
 <section class="default">
   <div class="inner">
     <div class="section-intro center">
-      <h3 class="section-title">
+      <h2 class="section-title">
         <?php the_field('project_title', 'options');?>
-      </h3>
+      </h2>
       <?php the_field('project_copy', 'options');?>
     </div>
     <div class="work-nav">
@@ -52,7 +52,7 @@
               $products->the_post();
           ;?>
           <?php $link = get_field('has_internal_links') ? get_the_permalink() : get_field('project_url') ;?>
-            <a class="two-col-grid__item" target="_blank" href="<?php echo $link; ?>">
+            <a class="two-col-grid__item" target="_blank" href="<?php echo $link; ?>" rel="noopener">
               <div>
                 <img src="<?php the_field('thumbnail');?>" alt="">
               </div>
@@ -78,7 +78,7 @@
               $products->the_post();
           ;?>
             <?php $link = get_field('has_internal_links') ? get_the_permalink() : get_field('project_url') ;?>
-              <a class="two-col-grid__item" href="<?php echo $link; ?>" target="_blank">
+              <a class="two-col-grid__item" href="<?php echo $link; ?>" target="_blank" rel="noopener">
               <div>
                 <img src="<?php the_field('thumbnail');?>" alt="">
               </div>

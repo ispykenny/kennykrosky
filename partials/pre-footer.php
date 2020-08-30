@@ -14,7 +14,7 @@
       </div>
 
       <div class="section-bg has-overlay">
-        <div class="section-bg__el" data-bg="http://kennykrosky:8888/wp-content/uploads/2020/08/meandthegirls-2.jpg"></div>
+        <div class="section-bg__el" data-bg="https://kennykrosky.com/wp-content/uploads/2020/08/meandthegirls-2.jpg"></div>
       </div>
     </a>
    <?php } else { ;?>

@@ -24,6 +24,7 @@
 		<div class="nav-section">
 			<div class="nav-section__item">
 				<a href="<?php echo site_url('/');?>" id="me">
+					<span class="sr-only">Home Page</span>
 					<div>
 						<div class="section-bg">
 							<div class="section-bg__el" data-bg="<?php echo site_url('/wp-content/uploads/2019/01/github-1.jpg') ?>"></div>
