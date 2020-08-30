@@ -145,7 +145,9 @@
 	}
 	add_action( 'wp_footer', 'my_deregister_scripts' );
 
+	wp_deregister_script('jquery');
 
+	
 	add_image_size('preview', 1920, 1080, array('center', 'center'));
 
 ?>
