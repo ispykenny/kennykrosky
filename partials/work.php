@@ -11,8 +11,8 @@
         <li class="active" data-id="0">Products</li>
         <li data-id="1">Websites (Dev)</li>
         <li data-id="2">Designs</li>
-        <span class="indicator"></span>
       </ul>
+      <span class="indicator"></span>
     </div>
 
 

@@ -145,6 +145,15 @@
 	}
 	add_action( 'wp_footer', 'my_deregister_scripts' );
 
+	/** * Completely Remove jQuery From WordPress */
+function my_init() {
+	if (!is_admin()) {
+			wp_deregister_script('jquery');
+			wp_register_script('jquery', false);
+	}
+}
+add_action('init', 'my_init');
+
 	
 	add_image_size('preview', 1920, 1080, array('center', 'center'));
 
