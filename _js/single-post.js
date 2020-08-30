@@ -6,9 +6,10 @@ const animateInSinglePost = () => {
     document.getElementsByTagName('body')[0].classList.add('init-blog');
 
     let lastSleeve = document.querySelector('.single-blog-hero__an:last-of-type')
-    lastSleeve.addEventListener('transitionstart', () => {
+    
+    setTimeout(() => {
       body.classList.add('show-content')
-    });
+    }, 200)
 
 
 
