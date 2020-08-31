@@ -32,7 +32,7 @@
                 <img src="<?php the_field('thumbnail');?>" alt="">
               </div>
               <div class="card-details">
-                <h4><?php the_field('thumbnail_details');?></h4>
+                <p><?php the_field('thumbnail_details');?></p>
                 <span></span>
               </div>
             </a>
@@ -57,7 +57,7 @@
                 <img src="<?php the_field('thumbnail');?>" alt="">
               </div>
               <div class="card-details">
-                <h4><?php the_field('thumbnail_details');?></h4>
+                <p><?php the_field('thumbnail_details');?></p>
                 <span></span>
               </div>
             </a>
@@ -83,7 +83,7 @@
                 <img src="<?php the_field('thumbnail');?>" alt="">
               </div>
               <div class="card-details">
-                <h4><?php the_field('thumbnail_details');?></h4>
+                <p><?php the_field('thumbnail_details');?></p>
                 <span></span>
               </div>
             </a>
