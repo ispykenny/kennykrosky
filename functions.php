@@ -146,15 +146,27 @@
 	add_action( 'wp_footer', 'my_deregister_scripts' );
 
 	/** * Completely Remove jQuery From WordPress */
-function my_init() {
-	if (!is_admin()) {
-			wp_deregister_script('jquery');
-			wp_register_script('jquery', false);
+	function my_init() {
+		if (!is_admin()) {
+				wp_deregister_script('jquery');
+				wp_register_script('jquery', false);
+		}
 	}
-}
-add_action('init', 'my_init');
+	add_action('init', 'my_init');
 
 	
 	add_image_size('preview', 1920, 1080, array('center', 'center'));
+
+	// Alternative
+	// Fully Disable Gutenberg editor.
+	add_filter('use_block_editor_for_post_type', '__return_false', 10);
+	// Don't load Gutenberg-related stylesheets.
+	add_action( 'wp_enqueue_scripts', 'remove_block_css', 100 );
+	function remove_block_css() {
+		wp_dequeue_style( 'wp-block-library' ); // WordPress core
+		wp_dequeue_style( 'wp-block-library-theme' ); // WordPress core
+		wp_dequeue_style( 'wc-block-style' ); // WooCommerce
+		wp_dequeue_style( 'storefront-gutenberg-blocks' ); // Storefront theme
+	}
 
 ?>
