@@ -1,4 +1,6 @@
 <?php 
+	wp_redirect('https://ispykenny.com/');
+	exit;
 	$root = get_template_directory_uri();
 ?>
 <!DOCTYPE html>
